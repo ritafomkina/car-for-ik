@@ -1,0 +1,44 @@
+@import "../../../styles.scss";
+
+:host {
+min-height: 250px;
+@include flex(row, center, space-between);
+padding: 30px 130px;
+
+// background-size: cover;
+background-color: #fff;
+}
+
+.stat-container {
+  padding: 0px 10px 10px 10px;
+  width: 150px;
+  height: 150px;
+  border-radius: 7%;
+
+  // font: 400 13px/1.8 "Open Sans", sans-serif;
+
+  @include font(black, 700, 20px, 24px);
+  @include flex(column, start, start);
+  row-gap: 10px;
+  // background-color: rgba(32,50,62, .2);
+  // background: linear-gradient(#b3bdd6, 1%, #2e4b69);
+    // color: #fff;
+    opacity: 0.9;
+}
+
+.stat {
+  // background-image: url('./../../../assets/kandinsky-download-1692565600816-PhotoRoom.png-PhotoRoom.png');
+  background-size: cover;
+  width: 140px;
+  // height: 80px;
+  background-repeat: no-repeat;
+  @include flex(column, start, center);
+
+}
+
+.stat-container::before {
+  content: '';
+  background-size: cover;
+  width: 25px;
+  height: 25px;
+  }

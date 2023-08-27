@@ -1,0 +1,11 @@
+<button (click)="switchData('left')" class="pag-btn" id="to-left">&lt;</button>
+
+<div class="gallery">
+  <div class="gallery-card" *ngFor="let item of showedData">
+    <img src={{item.imgSRC}} alt="gallery-img">
+    <p>{{item.description}}</p>
+  </div>
+</div>
+
+
+<button (click)="switchData('right')" class="pag-btn" id="to-right">></button>

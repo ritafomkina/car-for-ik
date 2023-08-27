@@ -1,0 +1,12 @@
+@import "../../../styles.scss";
+
+:host {
+}
+
+div {
+  background-image: url('./../../../assets/alexis-amz-da-cruz-Uw1uLIg_PPs-unsplash.jpg');
+  min-height: 700px;
+  background-size: cover;
+  padding: 200px 130px;
+  @include font(#FFFFFF, 500, 20px, 24px);
+}

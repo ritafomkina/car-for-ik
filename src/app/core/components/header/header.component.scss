@@ -1,0 +1,33 @@
+@import "../../../../styles.scss";
+
+:host {
+  @include flex(row, center, space-between);
+    min-width: 100%;
+    // max-width: 1320px;
+    height: 120px;
+    padding: 0px 130px;
+  }
+
+
+  .logo {
+    @include font(#FFFFFF, 700, 20px, 24px);
+    position: relative;
+    text-transform: uppercase;
+  z-index: 2;
+  }
+
+
+  .header-nav {
+    @include font(#FFFFFF, 500, 18px, 23px);
+    text-transform: uppercase;
+    z-index: 2;
+  }
+
+  .header-list {
+    @include flex(row, center, space-between);
+    column-gap: 50px;
+  }
+
+  .nav-link{
+    cursor: pointer;
+  }

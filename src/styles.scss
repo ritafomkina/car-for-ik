@@ -1,1 +1,68 @@
-/* You can add global styles to this file, and also import other style files */
+html {
+  scroll-behavior: smooth;
+  width: 100vw;
+  height: 100%;
+}
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+img {
+  vertical-align: top;
+}
+
+h1,h2,h3,h4,p {
+  margin: 0;
+}
+
+body {
+  min-width: 100%;
+  background-color: #FFFFFF;
+  font-family: "Roboto Condensed", 'Roboto', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  overflow-x: hidden;
+}
+
+@font-face {
+  font-family: "Roboto Condensed";
+  font-style: normal;
+  font-weight: 500;
+  src: url("./assets/font/Roboto_Condensed/RobotoCondensed-Regular.ttf") format('truetype');
+}
+
+@font-face {
+  font-family: "Roboto Condensed";
+  font-style: normal;
+  font-weight: 700;
+  src: url("./assets/font/Roboto_Condensed/RobotoCondensed-Bold.ttf") format('truetype');
+}
+
+
+@mixin flex ( $direction: row, $align: center, $justify: center) {
+  display: flex;
+  flex-direction: $direction;
+  align-items: $align;
+  justify-content: $justify;
+}
+
+@mixin font ($color, $weight: 500, $size: 18px, $heigth: 14px) {
+  font-family: 'Roboto Condensed';
+  font-style: normal;
+  font-weight: $weight;
+  font-size: $size;
+  line-height: $heigth;
+  color: $color;
+}
